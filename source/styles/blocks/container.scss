@@ -2,4 +2,14 @@
   width: 280px;
   padding: 0 20px;
   margin: 0 auto;
+
+  @include media-tablet {
+    width: 728px;
+    padding: 0 20px;
+  }
+
+  @include media-desctop {
+    width: 1360px;
+    padding: 0 40px;
+  }
 }

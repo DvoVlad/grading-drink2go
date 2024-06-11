@@ -4,3 +4,17 @@
   align-items: center;
 }
 
+.page-header__logo-text {
+  display: none;
+
+  @include media-desctop {
+    display: block;
+    max-width: 126px;
+  }
+}
+
+.page-header__logo-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}

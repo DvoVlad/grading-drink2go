@@ -10,4 +10,8 @@
   background-size: 16px 16px;
   border: none;
   background-color: transparent;
+
+  @include media-tablet {
+    display: none;
+  }
 }

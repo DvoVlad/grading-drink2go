@@ -9,6 +9,17 @@
   padding: 0;
   list-style: none;
   display: none;
+
+  @include media-tablet {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 60px;
+    align-items: center;
+  }
+
+  @include media-desctop {
+    margin-right: 162px;
+  }
 }
 
 .navigation__icons-list {
@@ -17,6 +28,24 @@
   list-style: none;
   display: flex;
   flex-wrap: wrap;
+
+  @include media-desctop {
+    gap: 20px;
+  }
+}
+
+.navigation__link {
+  text-decoration: none;
+  box-sizing: border-box;
+  padding: 32px 20px 31px;
+  text-transform: uppercase;
+  color: $baseblack;
+  font-weight: 500;
+}
+
+.navigation__link--active {
+  color: $baseprimary;
+  border-bottom: 2px solid $baseprimary;
 }
 
 .navigation__icons-item-link {
@@ -25,6 +54,21 @@
   box-sizing: border-box;
   height: 60px;
   width: 60px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $baseblack;
+  font-weight: 500;
+
+  @include media-tablet {
+    height: 80px;
+    padding: 32px 22px;
+  }
+
+  @include media-desctop {
+    width: auto;
+    display: flex;
+    gap: 8px;
+  }
 }
 
 .navigation__icons-item-link--login::before {
@@ -49,4 +93,8 @@
 
 .navigation__icons-item-text {
   display: none;
+
+  @include media-desctop {
+    display: block;
+  }
 }
