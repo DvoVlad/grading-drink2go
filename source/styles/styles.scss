@@ -1,7 +1,14 @@
 /* GLOBAL */
 @import "./common/variables.scss";
-@import "./common/global.scss";
+@import "./common/mixins.scss";
 @import "./common/fonts.scss";
+@import "./common/global.scss";
+
+/* MINI BLOCKS */
+@import "./blocks/visually-hidden.scss";
+@import "./blocks/navigation.scss";
+@import "./blocks/burger-button.scss";
 
 /* BLOCKS */
-@import "./blocks/header.scss";
+@import "./blocks/container.scss";
+@import "./blocks/page-header.scss";
