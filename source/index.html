@@ -43,9 +43,10 @@
     </header>
     <main class="page-main">
       <section class="hero-slider" data-test="hero">
-        <button class="hero-slider__prev slider-button-prev"></button>
+        <div class="hero-slider__background"></div>
+        <button class="hero-slider__prev slider-button-prev"><span class="visually-hidden">Предыдущий слайд</span><svg width="16" height="16" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="m13.72 0 1.28 1.32-8.43 8.68 8.43 8.68-1.28 1.32-9.72-10 9.72-10Z" fill="currentColor"/></svg></button>
         <div class="hero-slider__item-wrapper">
-          <article class="hero-slider__item">
+          <article class="hero-slider__item hero-slider__item--active" data-color="#f3ebe1">
             <div class="hero-slider__image-wrapper">
               <picture>
                 <source media="(min-width: 1440px)" type="image/webp" srcset="images/slider-1-large@1x.webp 1x, images/slider-1-large@2x.webp 2x" width="600" height="600">
@@ -74,8 +75,71 @@
               </div>
             </div>
           </article>
+          <article class="hero-slider__item" data-color="#eae6fc">
+            <div class="hero-slider__image-wrapper">
+              <picture>
+                <source media="(min-width: 1440px)" type="image/webp" srcset="images/slider-2-large@1x.webp 1x, images/slider-2-large@2x.webp 2x" width="600" height="600">
+                <source media="(min-width: 1440px)" type="image/png" srcset="images/slider-2-large@1x.png 1x, images/slider-2-large@2x.png 2x" width="600" height="600">
+                <source media="(min-width: 768px)" type="image/webp" srcset="images/slider-2-medium@1x.webp 1x, images/slider-2-medium@2x.webp 2x" width="476" height="476">
+                <source media="(min-width: 768px)" type="image/png" srcset="images/slider-2-medium@1x.png 1x, images/slider-2-medium@2x.png 2x" width="476" height="476">
+                <source type="image/webp" srcset="images/slider-2-small@1x.webp 1x, images/slider-2-small@2x.webp 2x" width="280" height="280">
+                <img class="hero-slider__image" src="images/slider-2-small@1x.png" srcset="images/slider-2-small@1x.png 1x,
+                images/slider-2-small@2x.png 2x" loading="lazy" width="280" height="280" alt="Товар">
+              </picture>
+            </div>
+            <div class="hero-slider__column">
+              <div class="hero-slider__item-text-wrapper">
+                <p class="hero-slider__item-new-tooltip">Новинка!</p>
+                <h1 class="hero-slider__title">Лавандовый Латте</h1>
+                <p class="hero-slider__text">Невероятное сочетание перуанской высокогорной арабики с молоком ламы и лавандовым сиропом унесёт вас прямо на вершину Радужных гор</p>
+              </div>
+              <div class="hero-slider__buy-info">
+                <p class="hero-slider__old-price">
+                  285₽
+                </p>
+                <p class="hero-slider__price">
+                  265₽
+                </p>
+                <button class="button" type="button">Заказать</button>
+              </div>
+            </div>
+          </article>
+          <article class="hero-slider__item" data-color="#e5e6e8">
+            <div class="hero-slider__image-wrapper">
+              <picture>
+                <source media="(min-width: 1440px)" type="image/webp" srcset="images/slider-2-large@1x.webp 1x, images/slider-2-large@2x.webp 2x" width="600" height="600">
+                <source media="(min-width: 1440px)" type="image/png" srcset="images/slider-2-large@1x.png 1x, images/slider-2-large@2x.png 2x" width="600" height="600">
+                <source media="(min-width: 768px)" type="image/webp" srcset="images/slider-2-medium@1x.webp 1x, images/slider-2-medium@2x.webp 2x" width="476" height="476">
+                <source media="(min-width: 768px)" type="image/png" srcset="images/slider-2-medium@1x.png 1x, images/slider-2-medium@2x.png 2x" width="476" height="476">
+                <source type="image/webp" srcset="images/slider-2-small@1x.webp 1x, images/slider-2-small@2x.webp 2x" width="280" height="280">
+                <img class="hero-slider__image" src="images/slider-2-small@1x.png" srcset="images/slider-2-small@1x.png 1x,
+                images/slider-2-small@2x.png 2x" loading="lazy" width="280" height="280" alt="Товар">
+              </picture>
+            </div>
+            <div class="hero-slider__column">
+              <div class="hero-slider__item-text-wrapper">
+                <p class="hero-slider__item-new-tooltip">Новинка!</p>
+                <h1 class="hero-slider__title">Тройной Эспрессо</h1>
+                <p class="hero-slider__text">Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной эспрессо из Колумбии покажет вам, что такое настоящая бодрость</p>
+              </div>
+              <div class="hero-slider__buy-info">
+                <p class="hero-slider__old-price">
+                  285₽
+                </p>
+                <p class="hero-slider__price">
+                  265₽
+                </p>
+                <button class="button" type="button">Заказать</button>
+              </div>
+            </div>
+          </article>
         </div>
-        <button class="hero-slider__next slider-button-next"></button>
+        <button class="hero-slider__next slider-button-next"><span class="visually-hidden">Следующий слайд</span><svg width="16" heihgt="16" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="m6.28 0-1.28 1.32 8.43 8.68-8.43 8.68 1.28 1.32 9.72-10-9.72-10Z" fill="currentColor"/></svg></button>
+        <div class="hero-slider__paginations-wrapper">
+          <button class="hero-slider__pagination hero-slider__pagination--active" type="button"></button>
+          <button class="hero-slider__pagination" type="button"></button>
+          <button class="hero-slider__pagination" type="button"></button>
+        </div>
       </section>
       test
     </main>
