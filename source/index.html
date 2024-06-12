@@ -2,11 +2,14 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="UTF-8">
-    <title>Название проекта</title>
+    <title>Drink2Go</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!--
     <link rel="preload" href="fonts/Montserrat/Montserrat-Regular.woff2" type="font/woff2" as="font">
     <link rel="preload" href="fonts/Montserrat/Montserrat-Medium.woff2" type="font/woff2" as="font">
+    <link rel="preload" href="fonts/Montserrat/Montserrat-SemiBold.woff2" type="font/woff2" as="font">
     <link rel="preload" href="fonts/Montserrat/Montserrat-Bold.woff2" type="font/woff2" as="font">
+    -->
     <link rel="stylesheet" href="styles/styles.css">
     <script src="scripts/index.js" defer></script>
   </head>
@@ -40,9 +43,9 @@
     </header>
     <main class="page-main">
       <section class="hero-slider" data-test="hero">
-        <div class="slider-button-prev"></div>
+        <button class="hero-slider__prev slider-button-prev"></button>
         <div class="hero-slider__item-wrapper">
-          <div class="hero-slider__item">
+          <article class="hero-slider__item">
             <div class="hero-slider__image-wrapper">
               <picture>
                 <source media="(min-width: 1440px)" type="image/webp" srcset="images/slider-1-large@1x.webp 1x, images/slider-1-large@2x.webp 2x" width="600" height="600">
@@ -54,26 +57,27 @@
                 images/slider-1-small@2x.png 2x" loading="lazy" width="280" height="280" alt="Товар">
               </picture>
             </div>
-            <div class="hero-slider__item-new-box">
-              Новинка!
+            <div class="hero-slider__column">
+              <div class="hero-slider__item-text-wrapper">
+                <p class="hero-slider__item-new-tooltip">Новинка!</p>
+                <h1 class="hero-slider__title">Декаф Флэт Уайт</h1>
+                <p class="hero-slider__text">Свежесваренный кофе без кофеина из Эфиопии<br class="hero-slider__br"> с натуральным фермерским молоком — то, что нужно<br class="hero-slider__br"> для расслабления после тяжёлого рабочего дня</p>
+              </div>
+              <div class="hero-slider__buy-info">
+                <p class="hero-slider__old-price">
+                  295₽
+                </p>
+                <p class="hero-slider__price">
+                  225₽
+                </p>
+                <button class="button" type="button">Заказать</button>
+              </div>
             </div>
-            <h1 class="hero-slider__title">Декаф Флэт Уайт</h1>
-            <div class="hero-slider__text-wrapper">
-              <p>Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня</p>
-            </div>
-            <div class="hero-slider__buy-info">
-              <p class="hero-slider__old-price">
-                295₽
-              </p>
-              <p class="hero-slider__price">
-                225₽
-              </p>
-              <button type="button">Заказать</button>
-            </div>
-          </div>
+          </article>
         </div>
-        <div class="slider-button-next"></div>
+        <button class="hero-slider__prev slider-button-next"></button>
       </section>
+      test
     </main>
     <footer class="page-footer">
     </footer>
