@@ -2,8 +2,6 @@
   display: grid;
   grid-template-columns: 20px 280px 20px;
   justify-content: center;
-  padding-top: 20px;
-  padding-bottom: 60px;
   position: relative;
 
   & .hero-slider__background {
@@ -18,7 +16,7 @@
 
   @include media-tablet {
     grid-template-columns: 80px 608px 80px;
-    padding-top: 60px;
+    //padding-top: 60px;
     padding-bottom: 0;
 
     & .hero-slider__background {
@@ -28,8 +26,8 @@
 
   @include media-desctop {
     grid-template-columns: 80px 1280px 80px;
-    padding-top: 30px;
-    padding-bottom: 60px;
+    padding-top: 0;
+    padding-bottom: 0;
 
     & .hero-slider__background {
       bottom: 0;
@@ -66,6 +64,8 @@
 }
 
 .hero-slider__image-wrapper {
+  margin-top: 20px;
+
   @include media-tablet {
     order: 1;
     margin-top: 20px;
@@ -73,12 +73,21 @@
 
   @include media-desctop {
     grid-area: image;
-    margin-top: 0;
+    margin-top: 30px;
+    margin-bottom: 84px;
   }
 }
 
 .hero-slider__column {
   grid-area: text;
+
+  @include media-tablet {
+    margin-top: 60px;
+  }
+
+  @include media-desctop {
+    margin-top: 0;
+  }
 }
 
 .hero-slider__item-wrapper {
@@ -138,6 +147,11 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  margin-bottom: 60px;
+
+  @include media-tablet {
+    margin-bottom: 0;
+  }
 
   @include media-desctop {
     justify-content: start;
@@ -184,9 +198,12 @@
 
 .hero-slider__paginations-wrapper {
   display: none;
-  grid-column: 1 / -1;
 
   @include media-desctop {
+    position: absolute;
+    left: 0;
+    bottom: 60px;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
