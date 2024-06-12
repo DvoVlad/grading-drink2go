@@ -6,6 +6,7 @@ window.addEventListener('load' , () => {
   const sliderItems = document.querySelectorAll('.hero-slider__item');
   const sliderButtonPrev = document.querySelector('.hero-slider__prev');
   const sliderButtonNext = document.querySelector('.hero-slider__next');
+  const sliderBg = document.querySelector('.hero-slider__background');
   const maxItems = sliderItems.length;
 
   if(currentSliderItem > maxItems) {
@@ -18,6 +19,9 @@ window.addEventListener('load' , () => {
   sliderButtonNext.addEventListener('click', () => {
     const thisElement = document.querySelector('.hero-slider__item--active');
     const nextElement = document.querySelector(`.hero-slider__item:nth-child(${++currentSliderItem})`);
+    const bgColor = nextElement.dataset.color;
+
+    sliderBg.backgroundColor = bgColor;
 
     thisElement.classList.remove('hero-slider__item--active');
     nextElement.classList.add('hero-slider__item--active');
