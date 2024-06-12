@@ -20,6 +20,7 @@ window.addEventListener('load' , () => {
     const newPaginationItem = document.createElement('button');
     newPaginationItem.dataset.item = i;
     newPaginationItem.classList.add('hero-slider__pagination');
+    newPaginationItem.classList.add('slider-pagination');
     newPaginationItem.type = 'button';
     if(i === 1) {
       newPaginationItem.classList.add('hero-slider__pagination--active');

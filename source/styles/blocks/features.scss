@@ -1,0 +1,142 @@
+.features__container {
+  padding-top: 50px;
+  padding-bottom: 60px;
+
+  @include media-tablet {
+    padding-top: 60px;
+    padding-bottom: 100px;
+  }
+
+  @include media-desctop {
+    padding-top: 100px;
+    padding-bottom: 120px;
+  }
+}
+
+.features__title-text {
+  margin-top: 4px;
+  margin-bottom: 36px;
+}
+
+.features__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  @include media-tablet {
+    display: grid;
+    grid-template-columns: 339px 339px;
+    gap: 50px 30px;
+    justify-content: center;
+  }
+
+  @include media-desctop {
+    grid-template-columns: 318px 318px 318px 318px;
+  }
+}
+
+.feature__list-title {
+  margin-top: 0;
+  margin-bottom: 4px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+
+  @include media-tablet {
+    font-size: 24px;
+    line-height: 36px;
+    text-align: left;
+  }
+
+  @include media-desctop {
+    text-align: center;
+  }
+}
+
+.feature__description {
+  text-align: center;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0;
+
+  @include media-tablet {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+  }
+
+  @include media-desctop {
+    text-align: center;
+  }
+}
+
+.features__item {
+  @include media-tablet {
+    display: flex;
+    gap: 20px;
+
+    &::before {
+      flex-shrink: 0;
+    }
+  }
+
+  @include media-desctop {
+    display: block;
+  }
+}
+
+.features__item--speed::before {
+  content: " ";
+  display: block;
+  width: 52px;
+  height: 56px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  background-image: url("../../icons/stack.svg#speed-icon");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.features__item--comfortable::before {
+  content: " ";
+  display: block;
+  width: 52px;
+  height: 56px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  background-image: url("../../icons/stack.svg#comfortable-icon");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.features__item--cheerfulness::before {
+  content: " ";
+  display: block;
+  width: 52px;
+  height: 56px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  background-image: url("../../icons/stack.svg#cheerfulness-icon");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.features__item--ecology::before {
+  content: " ";
+  display: block;
+  width: 52px;
+  height: 56px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  background-image: url("../../icons/stack.svg#ecology-icon");
+  background-position: center;
+  background-repeat: no-repeat;
+}
