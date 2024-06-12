@@ -1,7 +1,5 @@
 /* в этот файл добавляет скрипты*/
 window.addEventListener('load' , () => {
-  /*const testEl = document.querySelector('.hero-slider .hero-slider__background');
-  testEl.style.backgroundColor = '#0f0';*/
   let currentSliderItem = 1;
   const sliderItems = document.querySelectorAll('.hero-slider__item');
   const sliderButtonPrev = document.querySelector('.hero-slider__prev');
@@ -21,7 +19,7 @@ window.addEventListener('load' , () => {
     const nextElement = document.querySelector(`.hero-slider__item:nth-child(${++currentSliderItem})`);
     const bgColor = nextElement.dataset.color;
 
-    sliderBg.backgroundColor = bgColor;
+    sliderBg.style.backgroundColor = bgColor;
 
     thisElement.classList.remove('hero-slider__item--active');
     nextElement.classList.add('hero-slider__item--active');
@@ -38,6 +36,9 @@ window.addEventListener('load' , () => {
   sliderButtonPrev.addEventListener('click', () => {
     const thisElement = document.querySelector('.hero-slider__item--active');
     const nextElement = document.querySelector(`.hero-slider__item:nth-child(${--currentSliderItem})`);
+    const bgColor = nextElement.dataset.color;
+
+    sliderBg.style.backgroundColor = bgColor;
 
     thisElement.classList.remove('hero-slider__item--active');
     nextElement.classList.add('hero-slider__item--active');
