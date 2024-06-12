@@ -1,0 +1,1 @@
+window.addEventListener("load",()=>{let t=1,e=document.querySelectorAll(".hero-slider__item"),r=document.querySelector(".hero-slider__prev"),l=document.querySelector(".hero-slider__next"),o=e.length});
