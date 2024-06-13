@@ -45,6 +45,7 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 32px;
+  color: $baseblack;
 
   @include media-tablet {
     font-size: 24px;
@@ -62,6 +63,7 @@
   font-size: 14px;
   line-height: 20px;
   margin: 0;
+  color: $baseblack;
 
   @include media-tablet {
     font-size: 16px;
