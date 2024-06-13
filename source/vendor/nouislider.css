@@ -75,9 +75,25 @@
   position: absolute;
 }
 
- .noUi-touch-area {
+.noUi-touch-area {
   height: 100%;
   width: 100%;
+  border-radius: 50%;
+  width:16px;
+  height: 16px;
+  padding: 3px;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  cursor: pointer;
+}
+
+.noUi-touch-area:hover {
+  background-color: rgba(120, 89, 207, 0.25);
+}
+
+.noUi-touch-area:active {
+  background-color: rgba(120, 89, 207, 1)
 }
 
  .noUi-state-tap .noUi-connect,
