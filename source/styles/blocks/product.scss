@@ -1,0 +1,23 @@
+.product {
+  background-color: $basewhite;
+  padding: 40px 20px 20px;
+}
+
+.product__image-wrapper {
+  text-align: center;
+}
+
+.product__title {
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 700;
+  margin-top: 24px;
+  margin-bottom: 0;
+}
+
+.product__description {
+  font-size: 14px;
+  line-height: 20px;
+  margin-top: 4px;
+  margin-bottom: 0;
+}
