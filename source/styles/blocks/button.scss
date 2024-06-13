@@ -9,3 +9,18 @@
   color: $basewhite;
   font-family: inherit;
 }
+
+.button--buy {
+  display: flex;
+  align-items: center;
+}
+
+.button--buy::before {
+  content: " ";
+  display: inline-block;
+  background-image: url("../../icons/stack.svg#busket-product");
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 16px;
+  margin-right: 6px;
+}
