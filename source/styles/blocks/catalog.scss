@@ -137,3 +137,33 @@
   background-color: $basewhite;
   color: $baseprimary;
 }
+
+.catalog__sort-wrapper {
+  padding-top: 40px;
+  padding-bottom: 20px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+}
+
+.catalog__sort {
+  padding: 0;
+  appearance: none;
+  border: none;
+  background-color: transparent;
+  color: $baseprimary;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: 600;
+  background-image: url("../../icons/stack.svg#arrow-down");
+  background-size: 10px 10px;
+  background-position: right center;
+  background-repeat: no-repeat;
+  padding-right: 27px;
+}
+
+.catalog__sort-label {
+  display: flex;
+  justify-content: space-between;
+}

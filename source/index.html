@@ -181,7 +181,7 @@
           <h2 class="main-title">Каталог</h2>
           <p class="main-title-text catalog__title-text">Каталог кофейных напитков</p>
           <div class="catalog__wrapper">
-            <form class="catalog__filter">
+            <form class="catalog__filter" method="post" active="https://echo.htmlacademy.ru;">
               <fieldset class="catalog__fieldset">
                 <legend class="catalog__legend">Цена</legend>
                 <div class="catalog__price-range"></div>
@@ -216,7 +216,12 @@
               </button>
             </form>
             <div class="catalog__sort-wrapper">
-
+              <label class="catalog__sort-label">
+                Сортировка:
+                <select class="catalog__sort" name="sort">
+                  <option value="default">по умолчанию</option>
+                </select>
+              </label>
             </div>
             <div class="catalog__products-wrapper">
 
