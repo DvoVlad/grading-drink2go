@@ -28,8 +28,6 @@ window.addEventListener('load' , () => {
     paginationWrapper.appendChild(newPaginationItem);
   }
 
-  const paginateItems = document.querySelectorAll('.hero-slider__pagination');
-
   paginationWrapper.addEventListener('click', (e) => {
     const clickedItem = e.target;
     const thisElement = document.querySelector('.hero-slider__item--active');
@@ -38,9 +36,9 @@ window.addEventListener('load' , () => {
     const bgColor = selectedItem.dataset.color;
     sliderBg.style.backgroundColor = bgColor;
 
-    for(let i = 0; i < paginateItems.length; i++) {
-      paginateItems[i].classList.remove('hero-slider__pagination--active');
-    }
+    const oldPaginateItem = document.querySelector('.hero-slider__pagination--active');
+    oldPaginateItem.classList.remove('hero-slider__pagination--active');
+
     clickedItem.classList.add('hero-slider__pagination--active');
 
     thisElement.classList.remove('hero-slider__item--active');
@@ -77,9 +75,8 @@ window.addEventListener('load' , () => {
       sliderButtonPrev.disabled = false;
     }
 
-    for(let i = 0; i < paginateItems.length; i++) {
-      paginateItems[i].classList.remove('hero-slider__pagination--active');
-    }
+    const oldPaginateItem = document.querySelector('.hero-slider__pagination--active');
+    oldPaginateItem.classList.remove('hero-slider__pagination--active');
 
     const currentPagination = document.querySelector(`.hero-slider__pagination:nth-child(${currentSliderItem})`);
     currentPagination.classList.add('hero-slider__pagination--active');
@@ -103,9 +100,8 @@ window.addEventListener('load' , () => {
       sliderButtonNext.disabled = false;
     }
 
-    for(let i = 0; i < paginateItems.length; i++) {
-      paginateItems[i].classList.remove('hero-slider__pagination--active');
-    }
+    const oldPaginateItem = document.querySelector('.hero-slider__pagination--active');
+    oldPaginateItem.classList.remove('hero-slider__pagination--active');
 
     const currentPagination = document.querySelector(`.hero-slider__pagination:nth-child(${currentSliderItem})`);
     currentPagination.classList.add('hero-slider__pagination--active');

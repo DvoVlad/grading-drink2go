@@ -228,4 +228,5 @@
 
 .hero-slider__pagination--active {
   background-color: $baseprimary;
+  pointer-events: none;
 }
