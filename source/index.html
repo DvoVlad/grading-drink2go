@@ -181,7 +181,7 @@
           <h2 class="main-title">Каталог</h2>
           <p class="main-title-text catalog__title-text">Каталог кофейных напитков</p>
           <div class="catalog__wrapper">
-            <div class="catalog__filter">
+            <form class="catalog__filter">
               <fieldset class="catalog__fieldset">
                 <legend class="catalog__legend">Цена</legend>
                 <div class="catalog__price-range"></div>
@@ -195,10 +195,26 @@
                   <li class="catalog__list-item"><label class="catalog__label"><input class="catalog__radio visually-hidden" type="radio" name="milk"><span class="catalog__markup"></span>Неважно</label></li>
                   <li class="catalog__list-item"><label class="catalog__label"><input class="catalog__radio visually-hidden" type="radio" name="milk"><span class="catalog__markup"></span>Только животное</label></li>
                   <li class="catalog__list-item"><label class="catalog__label"><input class="catalog__radio visually-hidden" type="radio" name="milk"><span class="catalog__markup"></span>Только растительное</label></li>
-                  <li class="catalog__list-item"><label class="catalog__label"><input class="catalog__radio visually-hidden" type="radio" name="milk"><span class="catalog__markup"></span>Без молока</label></li>
+                  <li class="catalog__list-item"><label class="catalog__label"><input class="catalog__radio visually-hidden" type="radio" name="milk" disabled><span class="catalog__markup"></span>Без молока</label></li>
                 </ul>
               </fieldset>
-            </div>
+              <fieldset class="catalog__fieldset">
+                <legend class="catalog__legend">Наличие молока</legend>
+                <ul class="catalog__list">
+                  <li class="catalog__list-item"><label class="catalog__label"><input class="catalog__checkbox visually-hidden" type="checkbox" name="country[]"><span class="catalog__markup"></span>Бразилия</label></li>
+                  <li class="catalog__list-item"><label class="catalog__label"><input class="catalog__checkbox visually-hidden" type="checkbox" name="country[]"><span class="catalog__markup"></span>Эфиопия</label></li>
+                  <li class="catalog__list-item"><label class="catalog__label"><input class="catalog__checkbox visually-hidden" type="checkbox" name="country[]"><span class="catalog__markup"></span>Колумбия</label></li>
+                  <li class="catalog__list-item"><label class="catalog__label"><input class="catalog__checkbox visually-hidden" type="checkbox" name="country[]"><span class="catalog__markup"></span>Коста-Рика</label></li>
+                  <li class="catalog__list-item"><label class="catalog__label"><input class="catalog__checkbox visually-hidden" type="checkbox" name="country[]" disabled><span class="catalog__markup"></span>Перу</label></li>
+                </ul>
+              </fieldset>
+              <button class="button catalog__send-button" type="submit">
+                Применить
+              </button>
+              <button class="button catalog__reset-button" type="reset">
+                Сбросить
+              </button>
+            </form>
             <div class="catalog__sort-wrapper">
 
             </div>
