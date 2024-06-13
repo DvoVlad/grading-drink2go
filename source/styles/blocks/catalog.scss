@@ -161,6 +161,15 @@
   background-position: right center;
   background-repeat: no-repeat;
   padding-right: 27px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $basesecondary;
+  }
+
+  &:active {
+    background-image: url("../../icons/stack.svg#arrow-up");
+  }
 }
 
 .catalog__sort-label {
