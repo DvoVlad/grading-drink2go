@@ -13,7 +13,15 @@
   background-color: transparent;
   cursor: pointer;
 
+  &:hover {
+    background-color: $basesecondary;
+  }
+
   @include media-tablet {
     display: none;
   }
+}
+
+.burger-button--cross {
+  background-image: url("../../icons/stack.svg#cross");
 }

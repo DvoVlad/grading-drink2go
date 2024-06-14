@@ -4,5 +4,6 @@ window.addEventListener('load', () => {
 
   toggleMenuButton.addEventListener('click', () => {
     mobileMenu.classList.toggle('navigation__list--active');
+    toggleMenuButton.classList.toggle('burger-button--cross');
   });
 });
