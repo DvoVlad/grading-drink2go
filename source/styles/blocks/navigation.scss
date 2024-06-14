@@ -41,6 +41,14 @@
   text-transform: uppercase;
   color: $baseblack;
   font-weight: 500;
+
+  &:hover {
+    color: $baseprimary;
+  }
+
+  &:active {
+    background-color: $basesecondary;
+  }
 }
 
 .navigation__link--active {
@@ -59,6 +67,14 @@
   color: $baseblack;
   font-weight: 500;
 
+  &:hover {
+    color: $baseprimary;
+  }
+
+  &:active {
+    background-color: $basesecondary;
+  }
+
   @include media-tablet {
     height: 80px;
     padding: 32px 22px;
@@ -75,21 +91,52 @@
 .navigation__icons-item-link--login::before {
   content: " ";
   display: block;
-  background-image: url("../../icons/stack.svg#login");
-  background-position: center;
-  background-repeat: no-repeat;
+  mask-image: url("../../icons/stack.svg#login");
+  mask-position: center;
+  mask-repeat: no-repeat;
+  mask-size: 16px 16px;
+  background-color: $baseblack;
   height: 16px;
   width: 16px;
+
+  &:hover {
+    background-color: $baseprimary;
+  }
 }
 
 .navigation__icons-item-link--busket::before {
   content: " ";
   display: block;
-  background-image: url("../../icons/stack.svg#busket");
-  background-position: center;
-  background-repeat: no-repeat;
+  mask-image: url("../../icons/stack.svg#busket");
+  mask-position: center;
+  mask-repeat: no-repeat;
+  mask-size: 16px 16px;
+  background-color: $baseblack;
   height: 16px;
   width: 16px;
+}
+
+.navigation__icons-item-link--busket:hover {
+  &::before {
+    background-color: $baseprimary;
+  }
+}
+
+.navigation__icons-item-link--login:hover {
+  &::before {
+    background-color: $baseprimary;
+  }
+}
+
+.navigation__icons-item-link--busket:active,
+.navigation__icons-item-link--login:active {
+  &::before {
+    background-color: $baseblack;
+
+    @include media-tablet {
+      background-color: $baseprimary;
+    }
+  }
 }
 
 .navigation__icons-item-text {
