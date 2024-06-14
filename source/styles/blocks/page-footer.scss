@@ -207,3 +207,15 @@
     grid-template-columns: 317px 318px 317px;
   }
 }
+
+.page-footer__academy-logo {
+  color: $basegray;
+}
+
+.page-footer__academy-logo:hover {
+  color: $baseprimary;
+}
+
+.page-footer__academy-logo:active {
+  color: $primarydarker;
+}
