@@ -2,3 +2,4 @@
 import '../vendor/nouislider';
 import './slider';
 import './range';
+import './menu';

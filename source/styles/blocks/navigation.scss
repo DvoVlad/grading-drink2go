@@ -23,13 +23,15 @@
 }
 
 .navigation__list--active {
-  display: block;
-  position: absolute;
-  top: 60px;
-  left: 0;
-  right: 0;
-  z-index: 3;
-  background-color: $basewhite;
+  @include media-mobile {
+    display: block;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    background-color: $basewhite;
+  }
 }
 
 .navigation__icons-list {
@@ -67,15 +69,19 @@
 }
 
 .navigation__list--active .navigation__link {
-  display: block;
-  width: 100%;
-  padding-top: 20px;
-  padding-bottom: 21px;
-  text-align: center;
+  @include media-mobile {
+    display: block;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 21px;
+    text-align: center;
+  }
 }
 
 .navigation__list--active .navigation__link--active {
-  border: none;
+  @include media-mobile {
+    border: none;
+  }
 }
 
 .navigation__icons-item-link {
