@@ -304,6 +304,10 @@
     margin-top: 70px;
     justify-content: end;
   }
+
+  @include media-desctop {
+    margin-top: 60px;
+  }
 }
 
 .catalog__pagination-link {
