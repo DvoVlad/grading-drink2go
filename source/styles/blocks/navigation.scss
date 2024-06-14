@@ -22,6 +22,16 @@
   }
 }
 
+.navigation__list--active {
+  display: block;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  background-color: $basewhite;
+}
+
 .navigation__icons-list {
   margin: 0;
   padding: 0;
@@ -54,6 +64,18 @@
 .navigation__link--active {
   color: $baseprimary;
   border-bottom: 2px solid $baseprimary;
+}
+
+.navigation__list--active .navigation__link {
+  display: block;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 21px;
+  text-align: center;
+}
+
+.navigation__list--active .navigation__link--active {
+  border: none;
 }
 
 .navigation__icons-item-link {
