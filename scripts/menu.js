@@ -1,1 +1,1 @@
-window.addEventListener("load",()=>{let t=document.querySelector(".burger-button"),e=document.querySelector(".navigation__list");t.addEventListener("click",()=>{e.classList.toggle("navigation__list--active")})});
+window.addEventListener("load",()=>{let t=document.querySelector(".burger-button"),e=document.querySelector(".navigation__list");t.addEventListener("click",()=>{e.classList.toggle("navigation__list--active"),t.classList.toggle("burger-button--cross")})});
