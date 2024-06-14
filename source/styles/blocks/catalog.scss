@@ -157,12 +157,21 @@
   background-size: cover;
 }
 
+.catalog__radio:hover ~ .catalog__markup,
+.catalog__radio:focus ~ .catalog__markup {
+  background-image: url("../../icons/stack.svg#radio-hover-focus");
+}
+
 .catalog__radio:checked ~ .catalog__markup {
   background-image: url("../../icons/stack.svg#radio-checked");
 }
 
 .catalog__radio:disabled ~ .catalog__markup {
   background-image: url("../../icons/stack.svg#radio-disabled");
+}
+
+.catalog__radio:disabled:checked ~ .catalog__markup {
+  background-image: url("../../icons/stack.svg#radio-disabled-checked");
 }
 
 .catalog__checkbox ~ .catalog__markup {
@@ -173,12 +182,22 @@
   background-size: cover;
 }
 
+.catalog__checkbox:hover ~ .catalog__markup,
+.catalog__checkbox:focus ~ .catalog__markup {
+  background-image: url("../../icons/stack.svg#toggle-hover-focus");
+}
+
 .catalog__checkbox:checked ~ .catalog__markup {
   background-image: url("../../icons/stack.svg#toggle-checked");
 }
 
 .catalog__checkbox:disabled ~ .catalog__markup {
   background-image: url("../../icons/stack.svg#toggle-disabled");
+}
+
+
+.catalog__checkbox:disabled:checked ~ .catalog__markup {
+  background-image: url("../../icons/stack.svg#toggle-disabled-checked");
 }
 
 .catalog__buttons-wrapper {
