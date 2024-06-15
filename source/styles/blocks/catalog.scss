@@ -83,9 +83,9 @@
 }
 
 .catalog__price-range {
-  margin-top: 26px; /* 21 px */
+  margin-top: 30px; /* 26/21 px */
   margin-bottom: 35px;
-  padding-right: 15px;
+  padding-right: 11px; /* 15px */
   padding-left: 5px;
 }
 
@@ -260,6 +260,7 @@
   font-size: 16px;
   line-height: 24px;
   font-weight: 600;
+  padding-left: 2px;
 
   @include media-tablet {
     padding-top: 44px;
@@ -267,6 +268,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: end;
+    padding-left: 0;
   }
 
   @include media-desctop {
