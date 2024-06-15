@@ -158,7 +158,8 @@
   gap: 10px;
 }
 
-.catalog__label:has(.catalog__radio:disabled) {
+.catalog__label:has(.catalog__radio:disabled),
+.catalog__label:has(.catalog__checkbox:disabled) {
   color: $basegray;
 }
 
