@@ -20,6 +20,10 @@
   @include media-tablet {
     margin-bottom: 60px;
   }
+
+  @include media-desctop {
+    margin-bottom: 80px;
+  }
 }
 
 .features__list {
@@ -107,6 +111,14 @@
   background-image: url("../../icons/stack.svg#speed-icon");
   background-position: center;
   background-repeat: no-repeat;
+
+  @include media-tablet {
+    margin-bottom: 0;
+  }
+
+  @include media-desctop {
+    margin-bottom: 20px;
+  }
 }
 
 .features__item--comfortable::before {
@@ -120,6 +132,14 @@
   background-image: url("../../icons/stack.svg#comfortable-icon");
   background-position: center;
   background-repeat: no-repeat;
+
+  @include media-tablet {
+    margin-bottom: 0;
+  }
+
+  @include media-desctop {
+    margin-bottom: 20px;
+  }
 }
 
 .features__item--cheerfulness::before {
@@ -133,6 +153,14 @@
   background-image: url("../../icons/stack.svg#cheerfulness-icon");
   background-position: center;
   background-repeat: no-repeat;
+
+  @include media-tablet {
+    margin-bottom: 0;
+  }
+
+  @include media-desctop {
+    margin-bottom: 20px;
+  }
 }
 
 .features__item--ecology::before {
@@ -146,4 +174,12 @@
   background-image: url("../../icons/stack.svg#ecology-icon");
   background-position: center;
   background-repeat: no-repeat;
+
+  @include media-tablet {
+    margin-bottom: 0;
+  }
+
+  @include media-desctop {
+    margin-bottom: 20px;
+  }
 }

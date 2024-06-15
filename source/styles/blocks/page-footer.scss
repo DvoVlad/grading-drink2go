@@ -13,7 +13,9 @@
   @include media-desctop {
     display: block;
     margin-top: 10px;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
+    font-size: 14px;
+    line-height: 20px;
   }
 }
 
@@ -25,6 +27,11 @@
   align-items: center;
   gap: 39px;
   margin-right: 10px;
+
+  @include media-desctop {
+    margin-right: 0;
+    margin-left: 10px;
+  }
 }
 
 .page-footer__social {
@@ -109,6 +116,10 @@
   margin-bottom: 20px;
   margin-top: 0;
   color: $baseprimary;
+
+  @include media-desctop {
+    margin-top: 9px;
+  }
 }
 
 .page-footer__item {
@@ -189,7 +200,7 @@
 
   @include media-desctop {
     grid-column: 1 / -1;
-    padding-top: 20px;
+    padding-top: 28px;
     padding-bottom: 40px;
   }
 }

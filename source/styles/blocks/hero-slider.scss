@@ -42,7 +42,7 @@
 
   @include media-desctop {
     display: grid;
-    grid-template-columns: 600px 625px;
+    grid-template-columns: 625px 625px;
     grid-template-areas: "image text" "image text";
     gap: 0 30px;
     text-align: left;
@@ -78,6 +78,7 @@
     grid-area: image;
     margin-top: 30px;
     margin-bottom: 84px;
+    margin-left: 25px;
   }
 }
 

@@ -10,11 +10,20 @@
     padding-top: 80px;
     padding-bottom: 90px;
   }
+
+  @include media-desctop {
+    padding-top: 100px;
+    padding-bottom: 120px;
+  }
 }
 
 .catalog__title-text {
   margin-top: 4px;
   margin-bottom: 20px;
+
+  @include media-desctop {
+    margin-bottom: 40px;
+  }
 }
 
 .catalog__filter {
@@ -211,6 +220,10 @@
     justify-content: center;
     gap: 20px;
   }
+
+  @include media-desctop {
+    margin-top: 40px;
+  }
 }
 
 .catalog__send-button {
@@ -259,7 +272,7 @@
   @include media-desctop {
     grid-area: sort;
     padding: 0;
-    margin-bottom: 26px;
+    margin-bottom: 28px; /* 26px */
   }
 }
 
