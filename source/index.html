@@ -12,7 +12,7 @@
     -->
     <link rel="stylesheet" href="vendor/nouislider.css">
     <link rel="stylesheet" href="styles/styles.css">
-    <script src="scripts/index.js" type="module" defer></script>
+    <script src="scripts/index.js" type="module"></script>
   </head>
   <body class="page__body">
     <header class="page-header" data-test="header">
@@ -44,6 +44,7 @@
     </header>
     <main class="page-main">
       <section class="hero-slider" data-test="hero">
+        <h1 class="visually-hidden">Drink2Go - Интернет-магазин кофейных напитков</h1>
         <div class="hero-slider__background"></div>
         <button class="hero-slider__prev slider-button-prev"><span class="visually-hidden">Предыдущий слайд</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="m13.72 0 1.28 1.32-8.43 8.68 8.43 8.68-1.28 1.32-9.72-10 9.72-10Z" fill="currentColor"/></svg></button>
         <div class="hero-slider__item-wrapper">
@@ -62,7 +63,7 @@
             <div class="hero-slider__column">
               <div class="hero-slider__item-text-wrapper">
                 <p class="hero-slider__item-new-tooltip">Новинка!</p>
-                <h1 class="hero-slider__title">Декаф Флэт Уайт</h1>
+                <h2 class="hero-slider__title">Декаф Флэт Уайт</h2>
                 <p class="hero-slider__text">Свежесваренный кофе без кофеина из Эфиопии с&nbsp;натуральным фермерским молоком — то, что нужно для&nbsp;расслабления после тяжёлого рабочего дня</p>
               </div>
               <div class="hero-slider__buy-info">
@@ -91,7 +92,7 @@
             <div class="hero-slider__column">
               <div class="hero-slider__item-text-wrapper">
                 <p class="hero-slider__item-new-tooltip">Новинка!</p>
-                <h1 class="hero-slider__title">Лавандовый Латте</h1>
+                <h2 class="hero-slider__title">Лавандовый Латте</h2>
                 <p class="hero-slider__text">Невероятное сочетание перуанской высокогорной арабики с молоком ламы и лавандовым сиропом унесёт вас прямо на вершину Радужных гор</p>
               </div>
               <div class="hero-slider__buy-info">
@@ -120,7 +121,7 @@
             <div class="hero-slider__column">
               <div class="hero-slider__item-text-wrapper">
                 <p class="hero-slider__item-new-tooltip">Новинка!</p>
-                <h1 class="hero-slider__title">Тройной Эспрессо</h1>
+                <h2 class="hero-slider__title">Тройной Эспрессо</h2>
                 <p class="hero-slider__text">Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной эспрессо из Колумбии покажет вам, что такое настоящая бодрость</p>
               </div>
               <div class="hero-slider__buy-info">
@@ -135,13 +136,8 @@
             </div>
           </article>
         </div>
-        <button class="hero-slider__next slider-button-next"><span class="visually-hidden">Следующий слайд</span><svg width="20" heihgt="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="m6.28 0-1.28 1.32 8.43 8.68-8.43 8.68 1.28 1.32 9.72-10-9.72-10Z" fill="currentColor"/></svg></button>
+        <button class="hero-slider__next slider-button-next"><span class="visually-hidden">Следующий слайд</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="m6.28 0-1.28 1.32 8.43 8.68-8.43 8.68 1.28 1.32 9.72-10-9.72-10Z" fill="currentColor"/></svg></button>
         <div class="hero-slider__paginations-wrapper">
-          <!--
-          <button class="hero-slider__pagination hero-slider__pagination--active" type="button"></button>
-          <button class="hero-slider__pagination" type="button"></button>
-          <button class="hero-slider__pagination" type="button"></button>
-          -->
         </div>
       </section>
       <section class="features" data-test="features">
@@ -181,7 +177,7 @@
           <h2 class="main-title">Каталог</h2>
           <p class="main-title-text catalog__title-text">Каталог кофейных напитков</p>
             <div class="catalog__wrapper">
-              <form class="catalog__filter" method="post" active="https://echo.htmlacademy.ru;">
+              <form class="catalog__filter" method="post" action="https://echo.htmlacademy.ru;">
                 <div class="catalog__fieldset-wrapper">
                 <fieldset class="catalog__fieldset">
                   <legend class="catalog__legend">Цена</legend>
@@ -401,13 +397,13 @@
           </div>
           <ul class="page-footer__socials">
             <li class="page-footer__social">
-              <a class="page-footer__social-link" href="#"><svg width="20" height="20" aria-role="image" aria-label="Перейти в vk" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.4 1.4c-1.4 1.41-1.4 3.67-1.4 8.2v.8c0 4.53 0 6.79 1.4 8.2 1.41 1.4 3.67 1.4 8.2 1.4h.8c4.53 0 6.79 0 8.2-1.4 1.4-1.41 1.4-3.67 1.4-8.2v-.8c0-4.53 0-6.79-1.4-8.2-1.41-1.4-3.67-1.4-8.2-1.4h-.8c-4.53 0-6.79 0-8.2 1.4Zm1.98 4.68c.1 5.2 2.7 8.33 7.26 8.33h.26v-2.98a4.11 4.11 0 0 1 3.45 2.98h2.37a6.58 6.58 0 0 0-3.43-4.18 6.35 6.35 0 0 0 2.93-4.15h-2.15c-.47 1.65-1.85 3.15-3.17 3.3v-3.3h-2.15v5.77c-1.33-.33-3.02-1.95-3.1-5.77h-2.27Z" fill="currentColor"/></svg></a>
+              <a class="page-footer__social-link" href="#"><svg width="20" height="20" role="img" aria-label="Перейти в vk" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.4 1.4c-1.4 1.41-1.4 3.67-1.4 8.2v.8c0 4.53 0 6.79 1.4 8.2 1.41 1.4 3.67 1.4 8.2 1.4h.8c4.53 0 6.79 0 8.2-1.4 1.4-1.41 1.4-3.67 1.4-8.2v-.8c0-4.53 0-6.79-1.4-8.2-1.41-1.4-3.67-1.4-8.2-1.4h-.8c-4.53 0-6.79 0-8.2 1.4Zm1.98 4.68c.1 5.2 2.7 8.33 7.26 8.33h.26v-2.98a4.11 4.11 0 0 1 3.45 2.98h2.37a6.58 6.58 0 0 0-3.43-4.18 6.35 6.35 0 0 0 2.93-4.15h-2.15c-.47 1.65-1.85 3.15-3.17 3.3v-3.3h-2.15v5.77c-1.33-.33-3.02-1.95-3.1-5.77h-2.27Z" fill="currentColor"/></svg></a>
             </li>
             <li class="page-footer__social">
-              <a class="page-footer__social-link" href="#"><svg width="20" height="20" aria-role="image" aria-label="Перейти в pinterest" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 0a11 11 0 0 0-4 21.25c-.1-.87-.2-2.21.03-3.16l1.29-5.47s-.33-.66-.33-1.63c0-1.53.89-2.67 2-2.67.93 0 1.38.7 1.38 1.54 0 .95-.6 2.36-.9 3.67-.27 1.1.54 1.99 1.62 1.99 1.96 0 3.46-2.07 3.46-5.04 0-2.64-1.9-4.48-4.6-4.48a4.76 4.76 0 0 0-4.96 4.78c0 .94.36 1.96.82 2.5.09.12.1.21.07.32l-.3 1.25c-.05.2-.16.24-.37.15-1.38-.64-2.23-2.65-2.23-4.26 0-3.47 2.52-6.66 7.26-6.66 3.82 0 6.78 2.72 6.78 6.35 0 3.8-2.39 6.84-5.7 6.84-1.12 0-2.17-.58-2.52-1.26l-.69 2.62a12.3 12.3 0 0 1-1.37 2.88 11 11 0 1 0 3.26-21.51Z" fill="currentColor"/></svg></a>
+              <a class="page-footer__social-link" href="#"><svg width="20" height="20" role="img" aria-label="Перейти в pinterest" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 0a11 11 0 0 0-4 21.25c-.1-.87-.2-2.21.03-3.16l1.29-5.47s-.33-.66-.33-1.63c0-1.53.89-2.67 2-2.67.93 0 1.38.7 1.38 1.54 0 .95-.6 2.36-.9 3.67-.27 1.1.54 1.99 1.62 1.99 1.96 0 3.46-2.07 3.46-5.04 0-2.64-1.9-4.48-4.6-4.48a4.76 4.76 0 0 0-4.96 4.78c0 .94.36 1.96.82 2.5.09.12.1.21.07.32l-.3 1.25c-.05.2-.16.24-.37.15-1.38-.64-2.23-2.65-2.23-4.26 0-3.47 2.52-6.66 7.26-6.66 3.82 0 6.78 2.72 6.78 6.35 0 3.8-2.39 6.84-5.7 6.84-1.12 0-2.17-.58-2.52-1.26l-.69 2.62a12.3 12.3 0 0 1-1.37 2.88 11 11 0 1 0 3.26-21.51Z" fill="currentColor"/></svg></a>
             </li>
             <li class="page-footer__social">
-              <a class="page-footer__social-link" href="#"><svg width="20" height="20" aria-role="image" aria-label="Перейти в однокласники" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.4 1.4c-1.4 1.41-1.4 3.67-1.4 8.2v.91c0 4.46 0 6.7 1.4 8.09 1.41 1.4 3.67 1.4 8.2 1.4h.91c4.46 0 6.7 0 8.09-1.4 1.4-1.41 1.4-3.67 1.4-8.2v-.91c0-4.46 0-6.7-1.4-8.09-1.41-1.4-3.67-1.4-8.2-1.4h-.91c-4.46 0-6.7 0-8.09 1.4Zm8.62 8.8a3.03 3.03 0 1 0-.01-6.07 3.03 3.03 0 0 0 0 6.07Zm0-4.28a1.25 1.25 0 0 1 0 2.5c-.69 0-1.25-.56-1.25-1.25a1.23 1.23 0 0 1 1.25-1.25Zm1.21 6.76a5.73 5.73 0 0 0 1.76-.72.88.88 0 0 0 .28-1.24.88.88 0 0 0-1.24-.27 3.85 3.85 0 0 1-4.08 0 .9.9 0 0 0-1.23.27.9.9 0 0 0 .3 1.22 5.8 5.8 0 0 0 1.77.72l-1.69 1.69a.89.89 0 0 0 0 1.25c.18.18.4.25.63.25.24 0 .46-.09.64-.25l1.67-1.67 1.67 1.67a.89.89 0 0 0 1.25-1.25l-1.73-1.67Z" fill="currentColor"/></svg></a>
+              <a class="page-footer__social-link" href="#"><svg width="20" height="20" role="img" aria-label="Перейти в однокласники" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.4 1.4c-1.4 1.41-1.4 3.67-1.4 8.2v.91c0 4.46 0 6.7 1.4 8.09 1.41 1.4 3.67 1.4 8.2 1.4h.91c4.46 0 6.7 0 8.09-1.4 1.4-1.41 1.4-3.67 1.4-8.2v-.91c0-4.46 0-6.7-1.4-8.09-1.41-1.4-3.67-1.4-8.2-1.4h-.91c-4.46 0-6.7 0-8.09 1.4Zm8.62 8.8a3.03 3.03 0 1 0-.01-6.07 3.03 3.03 0 0 0 0 6.07Zm0-4.28a1.25 1.25 0 0 1 0 2.5c-.69 0-1.25-.56-1.25-1.25a1.23 1.23 0 0 1 1.25-1.25Zm1.21 6.76a5.73 5.73 0 0 0 1.76-.72.88.88 0 0 0 .28-1.24.88.88 0 0 0-1.24-.27 3.85 3.85 0 0 1-4.08 0 .9.9 0 0 0-1.23.27.9.9 0 0 0 .3 1.22 5.8 5.8 0 0 0 1.77.72l-1.69 1.69a.89.89 0 0 0 0 1.25c.18.18.4.25.63.25.24 0 .46-.09.64-.25l1.67-1.67 1.67 1.67a.89.89 0 0 0 1.25-1.25l-1.73-1.67Z" fill="currentColor"/></svg></a>
             </li>
           </ul>
         </div>
@@ -439,13 +435,13 @@
             </h2>
             <ul class="page-footer__links-list">
               <li class="page-footer__item page-footer__item--address"><address>Санкт-Петербург, набережная реки Карповки, дом 5</address></li>
-              <li class="page-footer__item page-footer__item--phone"><a href="tel:+7 (999) 999-99-99">+7 (999) 999-99-99</a></li>
+              <li class="page-footer__item page-footer__item--phone"><a href="tel:+7(999)999-99-99">+7 (999) 999-99-99</a></li>
             </ul>
           </div>
         </div>
         <div class="page-footer__developed-by">
           <p class="page-footer__academy-text">Разработано в <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__academy-link">HTML Academy
-            <svg class="page-footer__academy-logo" aria-role="image" aria-label="Лого академии" width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="page-footer__academy-logo" role="img" aria-label="Лого академии" width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M11.2151 5.75392L5.97184 2.49957V2.49875L5.97121 2.49916L5.97058 2.49875V2.49957L0.784854 5.75013V1.40658L6.00008 0.830884L11.2151 1.40658V5.75392ZM11.211 6.32987L9.12557 7.62344L5.98451 5.65607L5.97935 6.22863L8.66414 7.9096L8.20107 8.19683L5.98451 6.80853L5.97935 7.3811L7.72892 8.47648L7.31607 8.76717L7.30606 8.77351L5.98451 7.95383L5.97935 8.52631L6.8465 9.06404L5.96315 9.62244L0.796198 6.3886L5.97058 3.1139V3.11448L11.211 6.32987ZM11.2151 11.7713L6 15.0384L0.784854 11.7713V7.02542L5.97763 10.2796L5.98631 10.8693L2.42396 8.63702L2.41871 9.20959L5.99523 11.4728L6.00407 12.0782L2.42873 9.83883L2.42356 10.4113L6 12.6745L9.60624 10.4026V7.95712L11.2151 6.94552V11.7713ZM5.99984 -3.17891e-07L0 0.662267V12.2411L6 16L12 12.2411V0.662267L5.99984 -3.17891e-07Z" fill="currentColor"/>
             </svg></a></p>
         </div>
