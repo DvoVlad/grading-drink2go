@@ -24,6 +24,7 @@
   display: flex;
   align-items: center;
   gap: 39px;
+  margin-right: 10px;
 }
 
 .page-footer__social {
@@ -74,7 +75,7 @@
 
 .page-footer__links {
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 28px;/* 20px */
   position: relative;
 
   @include media-tablet {
@@ -95,6 +96,10 @@
       display: none;
     }
   }
+}
+
+.page-footer__links--contacts {
+  padding-bottom: 20px;
 }
 
 .page-footer__title {
@@ -147,7 +152,7 @@
     display: block;
     width: 13px;
     height: 16px;
-    background-image: url("../../icons/stack.svg#address");
+    background-image: url("../../icons/stack.svg#phone");
     flex-shrink: 0;
   }
 }
@@ -218,4 +223,8 @@
 
 .page-footer__academy-logo:active {
   color: $primarydarker;
+}
+
+.page-footer__logo {
+  display: block;
 }

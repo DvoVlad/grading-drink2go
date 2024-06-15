@@ -13,6 +13,8 @@
 .button--buy {
   display: flex;
   align-items: center;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .button--buy::before {

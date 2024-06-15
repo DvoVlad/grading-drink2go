@@ -74,7 +74,7 @@
 }
 
 .catalog__price-range {
-  margin-top: 21px;
+  margin-top: 26px; /* 21 px */
   margin-bottom: 35px;
   padding-right: 15px;
   padding-left: 5px;
@@ -242,7 +242,7 @@
 }
 
 .catalog__sort-wrapper {
-  padding-top: 40px;
+  padding-top: 44px; /* 40px */
   padding-bottom: 20px;
   font-size: 16px;
   line-height: 24px;
@@ -275,7 +275,7 @@
   font-weight: 600;
   background-image: url("../../icons/stack.svg#arrow-down");
   background-size: 10px 10px;
-  background-position: right center;
+  background-position: 135px 8px; /* center right */
   background-repeat: no-repeat;
   padding-right: 27px;
   cursor: pointer;
