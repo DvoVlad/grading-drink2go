@@ -16,6 +16,7 @@
 .features__title-text {
   margin-top: 4px;
   margin-bottom: 36px;
+  color: $baseblack;
 
   @include media-tablet {
     margin-bottom: 60px;
@@ -114,10 +115,14 @@
 
   @include media-tablet {
     margin-bottom: 0;
+    position: relative;
+    top: 3px;
   }
 
   @include media-desctop {
     margin-bottom: 20px;
+    position: static;
+    top: auto;
   }
 }
 
@@ -177,9 +182,13 @@
 
   @include media-tablet {
     margin-bottom: 0;
+    position: relative;
+    top: 3px;
   }
 
   @include media-desctop {
     margin-bottom: 20px;
+    position: static;
+    top: auto;
   }
 }
