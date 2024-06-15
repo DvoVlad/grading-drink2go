@@ -54,14 +54,6 @@
   display: none;
 }
 
-.hero-slider__br {
-  display: none;
-
-  @include media-tablet {
-    display: inline;
-  }
-}
-
 .hero-slider__image {
   display: block;
 }
