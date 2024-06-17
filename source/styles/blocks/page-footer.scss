@@ -143,6 +143,15 @@
   margin-bottom: 20px;
 }
 
+.page-footer__item a:hover,
+.page-footer__item a:focus {
+  color: $primarylighter;
+}
+
+.page-footer__item a:active {
+  color: $primarydarker;
+}
+
 .page-footer__item:last-child {
   margin-bottom: 0;
 }
