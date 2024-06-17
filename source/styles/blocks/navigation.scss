@@ -15,11 +15,13 @@
     flex-wrap: wrap;
     margin-right: 60px;
     align-items: center;
+    max-width: 410px;
   }
 
   @include media-desctop {
     margin-right: 162px;
     gap: 20px;
+    max-width: 600px;
   }
 }
 
@@ -35,22 +37,32 @@
   }
 }
 
+.navigation__list-item {
+  display: flex;
+}
+
 .navigation__icons-list {
   margin: 0;
   padding: 0;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
+  max-width: 180px;
+
+  @include media-tablet {
+    max-width: 180px;
+  }
 
   @include media-desctop {
     gap: 20px;
+    max-width: 400px;
   }
 }
 
 .navigation__link {
   text-decoration: none;
   box-sizing: border-box;
-  padding: 32px 21px 31px;
+  padding: 31px 20px;
   text-transform: uppercase;
   color: $baseblack;
   font-weight: 500;
@@ -62,6 +74,10 @@
 
   &:active {
     background-color: $basesecondary;
+  }
+
+  @include media-desctop {
+    padding: 31px 21px;
   }
 }
 
