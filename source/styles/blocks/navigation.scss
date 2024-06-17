@@ -86,6 +86,21 @@
   border-bottom: 2px solid $baseprimary;
 }
 
+.navigation__list--active .navigation__link:first-child {
+  @include media-mobile {
+    &::before {
+      content: " ";
+      position: absolute;
+      left: 50%;
+      top: 0;
+      height: 1px;
+      width: 100vw;
+      transform: translateX(-50vw);
+      background-color: $basesecondary;
+    }
+  }
+}
+
 .navigation__list--active .navigation__link {
   @include media-mobile {
     display: block;
@@ -93,6 +108,18 @@
     padding-top: 20px;
     padding-bottom: 21px;
     text-align: center;
+    position: relative;
+
+    &::after {
+      content: " ";
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      height: 1px;
+      width: 100vw;
+      transform: translateX(-50vw);
+      background-color: $basesecondary;
+    }
   }
 }
 
