@@ -15,13 +15,13 @@
     flex-wrap: wrap;
     margin-right: 60px;
     align-items: center;
-    max-width: 410px;
+    max-width: 400px;
   }
 
   @include media-desctop {
     margin-right: 162px;
     gap: 20px;
-    max-width: 600px;
+    max-width: 470px;
   }
 }
 
