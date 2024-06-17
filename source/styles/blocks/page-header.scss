@@ -2,6 +2,11 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+
+  @include media-mobile {
+    width: 320px;
+    padding: 0;
+  }
 }
 
 .page-header__logo-text {
@@ -17,4 +22,8 @@
   display: flex;
   align-items: center;
   gap: 20px;
+
+  @include media-mobile {
+    margin-left: 20px;
+  }
 }
