@@ -8,6 +8,20 @@
   line-height: 24px;
   color: $basewhite;
   font-family: inherit;
+  cursor: pointer;
+}
+
+.button:focus,
+.button:hover {
+  background-color: $primarylighter;
+}
+
+.button:active {
+  background-color: $primarydarker;
+}
+
+.button:disabled {
+  background-color: $basegray;
 }
 
 .button--buy {

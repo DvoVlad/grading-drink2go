@@ -246,6 +246,16 @@
   background-color: $basewhite;
   color: $baseprimary;
 
+  &:hover,
+  &:active,
+  &:focus {
+    color: $basewhite;
+  }
+
+  &:disabled {
+    background-color: $lightgray;
+  }
+
   @include media-tablet {
     width: auto;
   }
@@ -362,38 +372,79 @@
   background-color: $basewhite;
   padding: 8px;
   box-sizing: border-box;
-}
+  border-radius: 4px;
 
-.catalog__pagination-link--prev {
-  background-image: url("../../icons/stack.svg#arrow-left");
-  background-size: 10px 10px;
-  background-position: center;
-  background-repeat: no-repeat;
+  &:hover,
+  &:focus {
+    background-color: $primarylighter;
+    color: $basewhite;
+  }
 
-  @include media-tablet {
-    background-image: none;
-    padding: 8px 20px;
-    width: auto;
+  &:active {
+    background-color: $primarydarker;
+    color: $basewhite;
+  }
+
+  &:disabled {
+    background-color: $lightgray;
   }
 }
 
+.catalog__pagination-link--prev,
 .catalog__pagination-link--next {
-  background-image: url("../../icons/stack.svg#arrow-right");
-  background-size: 10px 10px;
-  background-position: center;
-  background-repeat: no-repeat;
-
   @include media-tablet {
-    background-image: none;
     padding: 8px 20px;
     width: auto;
   }
+}
+
+.catalog__pagination-link--prev::before {
+  content: " ";
+  width: 10px;
+  height: 10px;
+  mask-image: url("../../icons/stack.svg#arrow-left");
+  mask-size: 10px 10px;
+  mask-position: center;
+  mask-repeat: no-repeat;
+  background-color: $baseprimary;
+
+  @include media-tablet {
+    display: none;
+  }
+}
+
+.catalog__pagination-link--prev:hover::before {
+  background-color: $basewhite;
+}
+
+.catalog__pagination-link--next::before {
+  content: " ";
+  width: 10px;
+  height: 10px;
+  mask-image: url("../../icons/stack.svg#arrow-right");
+  mask-size: 10px 10px;
+  mask-position: center;
+  mask-repeat: no-repeat;
+  background-color: $baseprimary;
+
+  @include media-tablet {
+    display: none;
+  }
+}
+
+.catalog__pagination-link--next:hover::before {
+  background-color: $basewhite;
 }
 
 .catalog__pagination-link--active {
   font-weight: 600;
   background-color: transparent;
   color: $baseblack;
+
+  &:hover {
+    background-color: transparent;
+    color: $baseblack;
+  }
 }
 
 .catalog__pagination-link--prev span,

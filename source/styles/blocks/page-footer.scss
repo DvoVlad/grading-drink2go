@@ -13,7 +13,7 @@
   @include media-desctop {
     display: block;
     margin-top: 10px;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
     font-size: 14px;
     line-height: 20px;
   }
@@ -26,9 +26,8 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 39px;
-  margin-right: 10px;
-  max-width: 138px;
+  gap: 20px;
+  max-width: 160px;
 
   @include media-tablet {
     max-width: 200px;
@@ -36,7 +35,7 @@
 
   @include media-desctop {
     margin-right: 0;
-    margin-left: 10px;
+    gap: 20px;
     max-width: 100%;
   }
 }
@@ -51,19 +50,26 @@
 
 .page-footer__social-link {
   color: inherit;
+  display: flex;
+  padding: 10px;
+
+  &:hover,
+  &:focus {
+    background-color: $basesecondary;
+  }
 }
 
 .page-footer__section {
   display: flex;
   justify-content: space-between;
-  padding-top: 22px;
-  padding-bottom: 22px;
+  padding-top: 20px;/* 22px */
+  padding-bottom: 20px; /* 22px */
   position: relative;
   align-items: center;
 
   @include media-tablet {
-    padding-top: 42px;
-    padding-bottom: 32px;
+    padding-top: 40px; /* 42px */
+    padding-bottom: 30px; /* 32px */
   }
 
   @include media-desctop {
@@ -220,6 +226,16 @@
   text-decoration: none;
   display: flex;
   gap: 4px;
+
+  &:hover,
+  &:hover svg {
+    color: $baseprimary;
+  }
+
+  &:active,
+  &:active svg {
+    color: $primarydarker;
+  }
 }
 
 .page-footer__links-wrapper {
@@ -232,18 +248,6 @@
   @include media-desctop {
     grid-template-columns: 317px 318px 317px;
   }
-}
-
-.page-footer__academy-logo {
-  color: $basegray;
-}
-
-.page-footer__academy-logo:hover {
-  color: $baseprimary;
-}
-
-.page-footer__academy-logo:active {
-  color: $primarydarker;
 }
 
 .page-footer__logo {

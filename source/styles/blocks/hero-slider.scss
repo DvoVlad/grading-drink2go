@@ -236,6 +236,10 @@
   cursor: pointer;
   background-color: $basewhite;
   z-index: 2;
+
+  &:hover {
+    background-color: $primaryopacity;
+  }
 }
 
 .hero-slider__pagination--active {
