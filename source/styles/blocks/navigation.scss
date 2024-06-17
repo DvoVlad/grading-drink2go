@@ -86,6 +86,12 @@
   border-bottom: 2px solid $baseprimary;
 }
 
+.navigation__list--active .navigation__link:active {
+  @include media-mobile {
+    color: $baseblack;
+  }
+}
+
 .navigation__list--active .navigation__link:first-child {
   @include media-mobile {
     &::before {
